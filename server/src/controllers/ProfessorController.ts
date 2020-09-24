@@ -9,6 +9,8 @@ class ProfessorController{
             return {
                 id: professor.id,
                 name: professor.name,
+                email: professor.email,
+                cpf: professor.cpf
             };
         });
 
@@ -17,15 +19,17 @@ class ProfessorController{
 
     async create (request: Request, response: Response){
         const {
-            id,
-            name
+            name,
+            email,
+            cpf
         } = request.body;
 
         const trx = await knex.transaction();
 
         const professor = {
-            id,
-            name
+            name,
+            email,
+            cpf
         };
 
         await trx('professor').insert(professor);
