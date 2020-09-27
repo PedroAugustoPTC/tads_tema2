@@ -1,0 +1,28 @@
+.container{
+    width: 100%;
+    max-width: 1120px;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .image-container h6, h1 .text {
+    text-align: left;
+}
+
+.container .image-container h1 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.container form h1 {
+    text-align: center;
+}
+
+.container .image-container h6, h1 {
+    padding-top: 0px;
+    margin: 0px;
+}
