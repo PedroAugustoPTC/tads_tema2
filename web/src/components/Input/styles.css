@@ -11,5 +11,6 @@
     border: 1px black;
     outline: 0;
     padding: 0 1.6rem;
-    font: 1.6rem Archivo;
+    font: 1.0rem Poppins;
+    color: black;
 }

@@ -1,0 +1,17 @@
+footer {
+    background-color: #b4c0c0aa;
+    color: black;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+footer .signature {
+    position: relative;
+    font-size: 1.0rem;
+    text-align: right;
+    padding: 5px;
+}
+
+footer .signature a {
+    margin-right: 4px;
+}

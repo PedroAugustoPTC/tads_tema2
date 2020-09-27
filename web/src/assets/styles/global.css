@@ -1,5 +1,7 @@
 html, body, #root {
-    background-color: #e0ecf1de ;
+    background-color: #e0ecf1de;
+    margin: 0;
+    padding: 0;
 }
 
 body, input, button, textarea {
@@ -14,4 +16,8 @@ h1 {
 
 ::-webkit-input-placeholder{
     font: 500 0.9rem Poppins;
+}
+
+footer {
+    font: 500 1.0rem Poppins;
 }
