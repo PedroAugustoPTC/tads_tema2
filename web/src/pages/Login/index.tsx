@@ -3,13 +3,13 @@ import React from 'react';
 import Logo from '../../assets/doggo.jpg';
 
 import Input from "../../components/Input";
-import Footer from '../../components/Input/Footer';
+import Footer from '../../components/Footer';
 
 import './styles.css';
 
 function Login() {
     return (
-        <div className="Login">
+        <>
             <div className="container">
                 <div className="image-container">
                     <h1 className="text">Doggo</h1>
@@ -21,11 +21,13 @@ function Login() {
                     <h1 className="text">Doggo</h1>
 
                     <Input label="Usuário" name="user" auxText="Insira seu usuário" />
+                    &nbsp;
                     <Input label="Senha" name="password" auxText="Insira sua senha" type="password" />
+                    <button type="button">Entrar</button>
                 </form>
             </div>
             <Footer />
-        </div>
+        </>
     );
 };
 
