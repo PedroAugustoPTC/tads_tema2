@@ -1,0 +1,17 @@
+html, body, #root {
+    background-color: #e0ecf1de ;
+}
+
+body, input, button, textarea {
+    font: 500 1.6rem Archivo;
+    color: #A044B7;
+}
+
+h1 {    
+    font: 500 5.5rem Archivo;
+    color: #38005A;
+}
+
+::-webkit-input-placeholder{
+    font: 500 0.9rem Poppins;
+}
