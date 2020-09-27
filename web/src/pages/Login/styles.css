@@ -9,20 +9,27 @@
     justify-content: space-between;
 }
 
+.container .image-container img {
+    height: 500px;
+    width: 600px;
+}
+
 .container .image-container h6, h1 .text {
     text-align: left;
 }
 
 .container .image-container h1 {
-    font-size: 22px;
     font-weight: 600;
+    font-size: 22px;
 }
 
 .container form h1 {
+    margin-bottom: 50px;
     text-align: center;
+    padding: 0px;
 }
 
 .container .image-container h6, h1 {
-    padding-top: 0px;
+    padding-top: 12px;
     margin: 0px;
 }
