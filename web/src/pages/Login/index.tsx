@@ -5,9 +5,11 @@ import Logo from '../../assets/doggo.jpg';
 import Input from "../../components/Input";
 import Footer from '../../components/Footer';
 
+import { Link } from 'react-router-dom'
+
 import './styles.css';
 
-function Login() {
+const Login = () => {
     return (
         <>
             <div className="container">
@@ -23,7 +25,12 @@ function Login() {
                     <Input label="Usuário" name="user" auxText="Insira seu usuário" />
                     &nbsp;
                     <Input label="Senha" name="password" auxText="Insira sua senha" type="password" />
-                    <button type="button">Entrar</button>
+                    <Link to="/initial-page">
+                        <button type="button">
+                            Entrar
+                    </button>
+                    </Link>
+
                 </form>
             </div>
             <Footer />
