@@ -22,3 +22,8 @@ h1 {
 footer {
     font: 500 1.0rem Poppins;
 }
+
+a {
+    text-decoration: none;
+  }
+  

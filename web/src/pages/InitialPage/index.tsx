@@ -1,12 +1,13 @@
 import React from 'react';
 
+import Doge from '../../assets/doge.png';
 import './styles.css';
 
 function InitialPage() {
     return (
-        <div className="containerr">
+        <div className="background-image">
             <div className="mark">
-                Desgraça
+                <img src={Doge} alt="Doggo"/>
             </div>
         </div>
 
