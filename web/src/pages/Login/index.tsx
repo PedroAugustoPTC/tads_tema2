@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Logo from '../../assets/doggo.jpg';
+import Logo from '../../assets/logo.png';
 
 import Input from "../../components/Input";
 import Footer from '../../components/Footer';
@@ -15,7 +15,7 @@ const Login = () => {
             <div className="container">
                 <div className="image-container">
                     <h1 className="text">Doggo</h1>
-                    <h6>Não deixe que os preceitos te definam.</h6>
+                    {/*<h6>Não deixe que os preceitos te definam.</h6>*/}
 
                     <img src={Logo} alt="Doggo" />
                 </div>
@@ -28,7 +28,7 @@ const Login = () => {
                     <Link to="/initial-page">
                         <button type="button">
                             Entrar
-                    </button>
+                        </button>
                     </Link>
 
                 </form>

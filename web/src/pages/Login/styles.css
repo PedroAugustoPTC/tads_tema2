@@ -11,11 +11,16 @@
 
 .container .image-container img {
     height: 500px;
-    width: 600px;
+    width: 700px;
+    border-radius: 31px;
 }
 
-.container .image-container h6, h1 .text {
+.container .image-container .text {
     text-align: left;
+    padding-bottom: 31px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
 }
 
 .container .image-container h1 {
