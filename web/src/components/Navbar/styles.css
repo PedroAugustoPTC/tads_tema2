@@ -1,19 +1,20 @@
 .navbar {
   background-color: #fff;
-  height: 7rem;
+  height: 9rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   border-bottom: 1px solid black;
 }
 
-.navbar h2 {
-  padding-left: 14rem;
+.navbar p {
+  padding-left: 18rem;
+  font-size: 86px;
 }
 
 img {
-  height: 6.6rem;
-  width: 6.6rem;
+  height: 8rem;
+  width: 8rem;
   padding-left: 2.5rem;
   cursor: auto;
 }

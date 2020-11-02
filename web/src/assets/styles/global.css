@@ -9,7 +9,7 @@ body, input, button, textarea {
     color: #A044B7;
 }
 
-h1 {    
+h1, p {    
     font: 500 5.5rem Archivo;
     color: #38005A;
 }
@@ -26,4 +26,7 @@ footer {
 a {
     text-decoration: none;
   }
-  
+
+.gambs {
+    padding-left: 16rem;
+}
