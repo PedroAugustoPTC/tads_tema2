@@ -7,6 +7,7 @@ import Login from './pages/Login';
 import User from './pages/User';
 import Class from './pages/Class';
 import Activy from './pages/Activity';
+import Rate from './pages/Rate';
 
 const Routes = () => {
     return (
@@ -18,7 +19,7 @@ const Routes = () => {
             <Route path="/class" component={Class}/>
             <Route path="/student" />
             <Route path="/activity" component={Activy}/>
-            <Route path="/rate" />
+            <Route path="/rate" component={Rate}/>
         </BrowserRouter>
     )
 }
