@@ -1,0 +1,15 @@
+.gambs {
+    padding-left: 30rem;
+}
+
+.container-classes {
+    height: 25rem;
+    width: 44rem;
+    background-color: #C4C4C4;
+    border-radius: 11px;
+}
+
+div.gambs p {
+    font-size: 10px !important;
+    color: #000;
+}

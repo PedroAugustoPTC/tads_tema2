@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Doge from '../../assets/doge.png';
 
+//import Icon from 'react-native-vector-icons/Feather';
+
 import { Data } from './data';
 
 import './styles.css';
@@ -17,8 +19,8 @@ const Navbar = () => {
                 <Link to="#" className="menu-bars">
                     {/*<img src={Doge} alt="Doggo"/>*/}
                 </Link>
-
-                <h2>Doggo</h2>
+                <p>Doggo</p>
+                {/*<Icon name="power" size={30} color="#900" />*/}
             </div>
             <nav className={navbar ? "nav-menu active" : "nav-menu"}>
                 <ul className="nav-menu-items">

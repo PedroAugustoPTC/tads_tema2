@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 
 import InitialPage from './pages/InitialPage';
 import Login from './pages/Login';
+import User from './pages/User';
 
 const Routes = () => {
     return (
@@ -11,13 +12,12 @@ const Routes = () => {
             <Navbar />
             <Route path="/" exact component={Login} />
             <Route path="/initial-page" component={InitialPage} />
-            <Route path="/user" />
+            <Route path="/user" component={User} />
             <Route path="/class" />
             <Route path="/student" />
             <Route path="/activity" />
             <Route path="/rate" />
         </BrowserRouter>
-
     )
 }
 
