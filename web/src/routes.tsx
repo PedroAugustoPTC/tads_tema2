@@ -6,6 +6,7 @@ import InitialPage from './pages/InitialPage';
 import Login from './pages/Login';
 import User from './pages/User';
 import Class from './pages/Class';
+import Activy from './pages/Activity';
 
 const Routes = () => {
     return (
@@ -16,7 +17,7 @@ const Routes = () => {
             <Route path="/user" component={User} />
             <Route path="/class" component={Class}/>
             <Route path="/student" />
-            <Route path="/activity" />
+            <Route path="/activity" component={Activy}/>
             <Route path="/rate" />
         </BrowserRouter>
     )

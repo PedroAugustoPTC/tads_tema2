@@ -39,7 +39,6 @@ const Class = () => {
                     options={[
                         { value: "Corno", label: "Corno" },
                         { value: "Maconheiro", label: "Maconheiro" },
-                        { value: "Geografia", label: "Geografia" },
                     ]}
                 />
 
