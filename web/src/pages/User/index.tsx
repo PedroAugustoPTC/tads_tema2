@@ -33,6 +33,7 @@ const User = () => {
                     />
                 </RadioGroup>
             </FormControl>
+            <br></br>
 
             {
                 value === 'aluno' &&
