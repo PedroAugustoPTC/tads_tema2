@@ -8,7 +8,7 @@
 }
 
 .navbar p {
-  padding-left: 18rem;
+  padding-left: 15rem;
   font-size: 86px;
 }
 
@@ -65,6 +65,8 @@ img {
 
 .nav-text a:hover {
   background-color: #1a83ff;
+  font-size: 20px;
+  transition: 0.2s;
 }
 
 .nav-menu-items {
@@ -98,3 +100,13 @@ li .nav-text {
   padding: 10px 0px;
 }
 
+li a:hover {
+  font-size: 25px;
+  transition: 0.3s;
+}
+
+li a:target {
+  font-size: 25px;
+  color: green !important;
+  transition: 0.3s;
+}

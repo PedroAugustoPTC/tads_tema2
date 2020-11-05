@@ -4,7 +4,7 @@ html, body, #root {
     padding: 0;
 }
 
-body, input, button, textarea {
+body, button, input, textarea {
     font: 500 1.6rem Archivo;
     color: #A044B7;
 }
