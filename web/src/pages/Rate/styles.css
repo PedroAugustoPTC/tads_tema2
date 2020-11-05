@@ -1,7 +1,6 @@
 .rate-area {
     display: flex;
-    height: 100%;
+    width: 50vw;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
 }

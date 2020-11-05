@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from '../../components/Button';
 import Input from '../../components/Input';
 import Select from '../../components/Select';
 
@@ -34,6 +35,7 @@ const Activy = () => {
                     auxText="Data"
                 />
             </div>
+            <Button label="Salvar" func={() => {}}></Button>
         </div >
     )
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from '../../components/Button';
 import Select from '../../components/Select';
 
 import './styles.css';
@@ -33,6 +34,8 @@ const Rate = () => {
                 >
                 </Select>
             </div>
+
+            <Button label="Salvar" func={() => {}}></Button>
         </div>
     )
 }

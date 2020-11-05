@@ -1,15 +1,9 @@
-.input-area-header {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    min-width: 800px;
-    max-width: 900px;
+.area-class {
+    width: 50vw;
 }
 
-.input-area-footer {
+.input-area-header, .input-area-footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    min-width: 800px;
-    max-width: 900px;
 }
