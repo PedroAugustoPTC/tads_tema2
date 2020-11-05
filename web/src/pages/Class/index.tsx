@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { FormControl } from '@material-ui/core';
 import Input from '../../components/Input';
 import Select from '../../components/Select';
+
+import './styles.css'
 
 const Class = () => {
 
@@ -9,7 +10,7 @@ const Class = () => {
 
     return (
         <div className="gambs">
-            <FormControl>
+            <div className="input-area-header">
                 <Input
                     label="Nome da Turma"
                     name="turma"
@@ -20,11 +21,10 @@ const Class = () => {
                     name="semestre"
                     auxText="Semestre"
                 />
-            </FormControl>
-            <br></br>
 
-            <FormControl>
+            </div>
 
+            <div className="input-area-footer">
                 <Input
                     label="Ano"
                     name="ano"
@@ -41,9 +41,7 @@ const Class = () => {
                         { value: "Maconheiro", label: "Maconheiro" },
                     ]}
                 />
-
-            </FormControl>
-
+            </div>
         </div>
     )
 }

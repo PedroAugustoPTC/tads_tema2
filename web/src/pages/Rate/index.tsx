@@ -1,13 +1,14 @@
-import { FormControl } from '@material-ui/core';
 import React, { useState } from 'react';
 import Select from '../../components/Select';
+
+import './styles.css';
 
 const Rate = () => {
     const [subject, setSubject] = useState('');
 
     return (
         <div className="gambs">
-            <FormControl>
+            <div className="rate-area">
                 <Select
                     value={subject}
                     onChange={(e) => { setSubject(e.target.value) }}
@@ -31,7 +32,7 @@ const Rate = () => {
                     ]}
                 >
                 </Select>
-            </FormControl>
+            </div>
         </div>
     )
 }

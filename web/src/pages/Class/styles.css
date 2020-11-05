@@ -1,0 +1,15 @@
+.input-area-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 800px;
+    max-width: 900px;
+}
+
+.input-area-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 800px;
+    max-width: 900px;
+}
