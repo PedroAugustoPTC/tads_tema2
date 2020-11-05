@@ -1,48 +1,55 @@
 import React, { useState } from 'react';
-import { FormControl, FormControlLabel, Radio, RadioGroup } from '@material-ui/core';
+import { FormControlLabel, Radio, RadioGroup } from '@material-ui/core';
 import Input from '../../components/Input';
 
 import '../../components/Navbar/styles.css';
 import './styles.css';
+import Button from '../../components/Button';
 
 const User = () => {
-    const [value, setValue] = useState('professor');
+    const [value, setValue] = useState('aluno');
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setValue((event.target as HTMLInputElement).value);
     }
 
+    function test() {
+        alert('aa');
+    }
+
     return (
         <div className="gambs">
-            <FormControl component="fieldset">
-                <RadioGroup
-                    name="gender1"
-                    value={value}
-                    onChange={handleChange}
-                    row
-                >
-                    <FormControlLabel
-                        value="professor"
-                        label="Professor"
-                        control={<Radio />}
-                    />
-                    <FormControlLabel
-                        value="aluno"
-                        label="Aluno"
-                        control={<Radio />}
-                    />
-                </RadioGroup>
-            </FormControl>
-            <br></br>
+
+            <RadioGroup
+                name="gender1"
+                value={value}
+                onChange={handleChange}
+                row
+                className="radio-group"
+            >
+                <FormControlLabel
+                    value="professor"
+                    label="Professor"
+                    control={<Radio />}
+                />
+                <FormControlLabel
+                    value="aluno"
+                    label="Aluno"
+                    control={<Radio />}
+                />
+            </RadioGroup>
 
             {
                 value === 'aluno' &&
                 (
-                    <FormControl component="fieldset">
-                        <Input label="Nome" name="nome" auxText="Nome" />
-                        <Input label="Matrícula" name="matricula" auxText="Matrícula" />
+                    <form className="aluno">
+                        <div className="area-input">
+                            <Input label="Nome" name="nome" auxText="Nome" />
+                            <Input label="Matrícula" name="matricula" auxText="Matrícula" />
+                        </div>
                         <p>Turma</p>
-                        <div className="container-classes">
+
+                        <div className="container-radio">
                             <RadioGroup
                                 value={value}
                                 onChange={handleChange}
@@ -75,21 +82,22 @@ const User = () => {
                                 />
                             </RadioGroup>
                         </div>
-                    </FormControl>
+                    </form>
                 )
             }
-
             {
                 value === 'professor' &&
                 (
-                    <FormControl component="fieldset">
+                    <form className="professor">
                         <Input label="Nome" name="nome" auxText="Nome" />
                         <Input label="E-mail" name="email" auxText="E-mail" />
                         <Input label="CPF" name="cpf" auxText="CPF" />
-                    </FormControl>
+                    </form>
                 )
             }
 
+
+            <Button label="Salvar" func={() => test}></Button>
         </div>
     );
 }

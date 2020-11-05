@@ -2,14 +2,40 @@
     padding-left: 30rem;
 }
 
-.container-classes {
+div.gambs p {
+    font-size: 24px !important;
+    color: #000;
+}
+
+form.professor {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+form.aluno {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    min-width: 700px;
+    max-width: 701px;
+}
+
+form.aluno .area-input {
+    display: flex;
+}
+
+.container-radio {
     height: 25rem;
     width: 44rem;
     background-color: #C4C4C4;
     border-radius: 11px;
 }
 
-div.gambs p {
-    font-size: 10px !important;
-    color: #000;
+Button {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 1.2rem;
 }

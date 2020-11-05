@@ -1,5 +1,10 @@
+.input-block {
+    margin-right: 7rem;
+}
+
 .input-block label {
     font-size: 1.4rem;
+    color: #000;
 }
 
 .input-block input {

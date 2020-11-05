@@ -3,8 +3,6 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Doge from '../../assets/doge.png';
 
-//import Icon from 'react-native-vector-icons/Feather';
-
 import { Data } from './data';
 
 import './styles.css';
@@ -12,15 +10,12 @@ import './styles.css';
 const Navbar = () => {
     const navbar = useState(true);
     //const showNavbar = () => setNavbar(!navbar);
-
     return (
         <>
             <div className="navbar">
-                <Link to="#" className="menu-bars">
-                    {/*<img src={Doge} alt="Doggo"/>*/}
+                <Link to="/" className="menu-bars">
+                    <p>Doggo</p>
                 </Link>
-                <p>Doggo</p>
-                {/*<Icon name="power" size={30} color="#900" />*/}
             </div>
             <nav className={navbar ? "nav-menu active" : "nav-menu"}>
                 <ul className="nav-menu-items">
@@ -31,8 +26,13 @@ const Navbar = () => {
 
                         {Data.map((item, index: number) => {
                             return (
-                                <Link to={item.path}>
-                                    <li key={index} className={item.cName}>
+                                <Link
+                                    to={item.path}
+                                    id={item.id}
+                                    className={item.cName}
+                                    key={item.id}
+                                >
+                                    <li >
                                         <span>{item.title}</span>
                                     </li>
                                 </Link>
