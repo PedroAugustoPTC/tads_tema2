@@ -53,6 +53,7 @@ const User = () => {
                             <RadioGroup
                                 value={value}
                                 onChange={handleChange}
+                                className="radio-group"
                                 row
                             >
                                 <FormControlLabel

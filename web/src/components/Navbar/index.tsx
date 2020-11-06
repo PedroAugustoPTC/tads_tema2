@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Doge from '../../assets/doge.png';
 
+import { FaPowerOff } from 'react-icons/fa'
+
 import { Data } from './data';
 
 import './styles.css';
@@ -15,6 +17,7 @@ const Navbar = () => {
             <div className="navbar">
                 <Link to="/" className="menu-bars">
                     <p>Doggo</p>
+                    <FaPowerOff />
                 </Link>
             </div>
             <nav className={navbar ? "nav-menu active" : "nav-menu"}>
@@ -29,10 +32,9 @@ const Navbar = () => {
                                 <Link
                                     to={item.path}
                                     id={item.id}
-                                    className={item.cName}
                                     key={item.id}
                                 >
-                                    <li >
+                                    <li className={item.cName}>
                                         <span>{item.title}</span>
                                     </li>
                                 </Link>
