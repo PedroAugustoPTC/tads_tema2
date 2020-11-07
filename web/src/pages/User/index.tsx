@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { FormControlLabel, Radio, RadioGroup } from '@material-ui/core';
-import Input from '../../components/Input';
 
-import '../../components/Navbar/styles.css';
-import './styles.css';
+import Input from '../../components/Input';
 import Button from '../../components/Button';
+
+import './styles.css';
 
 const User = () => {
     const [value, setValue] = useState('aluno');

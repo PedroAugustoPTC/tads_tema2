@@ -25,6 +25,7 @@ img {
 .menu-bars {
   margin-left: 2rem;
   font-size: 2rem;
+  cursor: default;
   background: none;
 }
 
@@ -34,6 +35,11 @@ div.navbar a.menu-bars {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+div.navbar a.menu-bars .icon {
+  padding: 10px 10px 0 0;
+  align-self: flex-start;
 }
 
 .nav-menu {
