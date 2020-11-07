@@ -1,26 +1,23 @@
 import React from 'react';
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Doge from '../../assets/doge.png';
-
 import { FaPowerOff } from 'react-icons/fa'
 
 import { Data } from './data';
 
+import Doge from '../../assets/doge.png';
+
 import './styles.css';
 
 const Navbar = () => {
-    const navbar = useState(true);
-    //const showNavbar = () => setNavbar(!navbar);
     return (
         <>
             <div className="navbar">
-                <Link to="/" className="menu-bars">
+                <Link to="#" className="menu-bars">
                     <p>Doggo</p>
-                    <FaPowerOff />
+                    <FaPowerOff size={32} className="icon"/>
                 </Link>
             </div>
-            <nav className={navbar ? "nav-menu active" : "nav-menu"}>
+            <nav className="nav-menu active">
                 <ul className="nav-menu-items">
                     <Link to="#" className="menu-bars">
                         <img src={Doge} alt="Doggo" />
