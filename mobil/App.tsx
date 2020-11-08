@@ -3,10 +3,11 @@ import React from 'react';
 import { AppLoading } from 'expo';
 import { Poppins_400Regular, Poppins_600SemiBold } from '@expo-google-fonts/poppins';
 import { Archivo_400Regular, Archivo_700Bold, useFonts } from '@expo-google-fonts/archivo';
+import { StatusBar } from 'react-native';
 
 import Rates from './src/pages/Rates';
 import Login from './src/pages/Login';
-import { StatusBar } from 'react-native';
+import ChangePassword from './src/pages/ChangePassword';
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -22,7 +23,7 @@ export default function App() {
     return (
       <>
         <StatusBar barStyle="dark-content" hidden={true} />
-        <Rates />
+        <ChangePassword />
       </>
     );
   }

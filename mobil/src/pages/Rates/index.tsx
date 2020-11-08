@@ -25,7 +25,6 @@ const Rates = () => {
                         <Text style={styles.teacherText}>Professor</Text>
                         <Text style={styles.percentRateText}>25%</Text>
                     </View>
-                    
                 </View>
             </View>
         </KeyboardAvoidingView>
