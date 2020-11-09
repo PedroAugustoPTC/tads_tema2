@@ -1,17 +1,23 @@
 import React, { useState } from 'react';
 
 import { Feather } from '@expo/vector-icons';
-import { TextInput, TouchableOpacity } from 'react-native-gesture-handler';
+import { RectButton, TextInput } from 'react-native-gesture-handler';
 import { View, Text, Platform, KeyboardAvoidingView } from 'react-native';
+
+import { useNavigation } from '@react-navigation/native';
 
 import styles from './style';
 
-const Login = () => {
+function Login() {
     const [revealPassword, setRevealPassword] = useState(true);
+    const navigation = useNavigation();
+
+    function handleToRates() {
+        navigation.navigate('Rates');
+    }
 
     return (
         <KeyboardAvoidingView
-        
             behavior={Platform.OS == "ios" ? "padding" : "height"}
             style={{ flex: 1 }}
         >
@@ -40,9 +46,9 @@ const Login = () => {
                         </View>
                     </View>
 
-                    <TouchableOpacity style={styles.button}>
+                    <RectButton style={styles.button} onPress={handleToRates}>
                         <Text style={styles.textButton}>Entrar</Text>
-                    </TouchableOpacity>
+                    </RectButton>
                 </View>
             </View>
         </KeyboardAvoidingView>

@@ -2,3 +2,5 @@
 /.expo-shared
 /.expo
 /web-build
+
+.gitignore
