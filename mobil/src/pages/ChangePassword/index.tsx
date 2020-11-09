@@ -4,7 +4,7 @@ import { RectButton, TextInput } from 'react-native-gesture-handler';
 
 import styles from './styles';
 
-const ChangePassword = () => {
+function ChangePassword () {
     return (
         <KeyboardAvoidingView>
             <View style={styles.background}>

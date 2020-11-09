@@ -5,9 +5,7 @@ import { Poppins_400Regular, Poppins_600SemiBold } from '@expo-google-fonts/popp
 import { Archivo_400Regular, Archivo_700Bold, useFonts } from '@expo-google-fonts/archivo';
 import { StatusBar } from 'react-native';
 
-import Rates from './src/pages/Rates';
-import Login from './src/pages/Login';
-import ChangePassword from './src/pages/ChangePassword';
+import Routes from './src/routes/routes';
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -22,8 +20,8 @@ export default function App() {
   } else {
     return (
       <>
-        <StatusBar barStyle="dark-content" hidden={true} />
-        <ChangePassword />
+        <StatusBar barStyle="light-content" hidden={false} backgroundColor="#8257E5" />
+        <Routes />
       </>
     );
   }

@@ -5,7 +5,7 @@ import { TextInput } from 'react-native-gesture-handler';
 
 import styles from './styles';
 
-const Rates = () => {
+function Rates() {
     return (
         <KeyboardAvoidingView
             behavior={Platform.OS == "ios" ? "padding" : "height"}
