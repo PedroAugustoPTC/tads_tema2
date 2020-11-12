@@ -20,8 +20,9 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         paddingLeft: 24,
         borderWidth: 1,
-        width: '100%',
+        width: '90%',
         height: 64,
+        borderRadius: 8,
     },
     areaRate: {
         flex: 1,

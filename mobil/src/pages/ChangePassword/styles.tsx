@@ -13,6 +13,7 @@ const styles = StyleSheet.create({
         paddingTop: 24,
     },
     passwordText: {
+        paddingLeft: 24,
         fontWeight: 'bold',
         fontSize: 24,
     },
@@ -26,8 +27,9 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         paddingLeft: 24,
         borderWidth: 1,
-        width: '100%',
+        width: '90%',
         height: 64,
+        borderRadius: 8,
     },
     areaButton: {
         flex: 1,
@@ -37,8 +39,8 @@ const styles = StyleSheet.create({
     },
     contactButton: {
         height: '80%',
-        width: '80%',
-        backgroundColor: '#04d361',
+        width: '90%',
+        backgroundColor: '#fff',
         marginTop: '100%',
         borderRadius: 8,
     },
@@ -46,11 +48,11 @@ const styles = StyleSheet.create({
         flex: 1,
         alignSelf: 'center',
         paddingRight: 20,
-        color: '#FFF',
-        fontFamily: 'Archivo_700Bold',
+        color: '#000',
+        fontFamily: 'Archivo_400Regular',
         fontSize: 16,
         marginLeft: 16,
-        lineHeight: 50,
+        lineHeight: 52,
     }
 })
 
