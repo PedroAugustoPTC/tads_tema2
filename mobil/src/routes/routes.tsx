@@ -31,6 +31,7 @@ function Routes() {
                             <Iconn />
                         ),
                         headerLeft: () => (<></>),
+                        title: 'Notas'
                     })}
                 />
                 <Stack.Screen
