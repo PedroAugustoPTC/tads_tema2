@@ -14,13 +14,14 @@ export default function App() {
     Poppins_400Regular,
     Poppins_600SemiBold,
   });
+  
+  //const nav = useNavigation();
 
   if (!fontsLoaded) {
     return <AppLoading />
   } else {
     return (
       <>
-        <StatusBar barStyle="light-content" hidden={false} backgroundColor="#8257E5" />
         <Routes />
       </>
     );
