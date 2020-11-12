@@ -1,10 +1,19 @@
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
-import { Button, KeyboardAvoidingView, Text, View } from 'react-native';
+import { KeyboardAvoidingView, Text, View } from 'react-native';
 import { RectButton, TextInput } from 'react-native-gesture-handler';
 
 import styles from './styles';
+import { Feather } from '@expo/vector-icons';
 
-function ChangePassword () {
+
+function ChangePassword() {
+    const nav = useNavigation();
+
+    function handleToRates() {
+        nav.navigate('Rates');
+    }
+
     return (
         <KeyboardAvoidingView>
             <View style={styles.background}>
@@ -18,10 +27,10 @@ function ChangePassword () {
 
                     <View style={styles.areaButton}>
                         <RectButton
-                            onPress={() => { }}
-                            style={styles.button}
+                            onPress={handleToRates}
+                            style={styles.contactButton}
                         >
-                            <Text>Salvar</Text>
+                            <Text style={styles.contactButtonText}>Salvar</Text>
                         </RectButton>
                     </View>
                 </View>
