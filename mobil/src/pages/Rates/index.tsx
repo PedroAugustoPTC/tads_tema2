@@ -1,11 +1,19 @@
 import React from 'react';
 
 import { View, KeyboardAvoidingView, Platform, Text } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 import { TextInput } from 'react-native-gesture-handler';
 
 import styles from './styles';
 
 function Rates() {
+    const navigation = useNavigation();
+
+    function handleToChangePassword() {
+        navigation.navigate('ChangePassword')
+        console.log('asdf');
+    }
+
     return (
         <KeyboardAvoidingView
             behavior={Platform.OS == "ios" ? "padding" : "height"}

@@ -2,10 +2,9 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     background: {
-        width: '100%',
         height: '100%',
         backgroundColor: '#8257E5',
-        color: '#8257E5'
+        color: '#8257E5',
     },
     container: {
         flex: 1,
@@ -15,7 +14,7 @@ const styles = StyleSheet.create({
     },
     passwordText: {
         fontWeight: 'bold',
-        fontSize: 24
+        fontSize: 24,
     },
     input: {
         marginTop: 10,
@@ -32,15 +31,27 @@ const styles = StyleSheet.create({
     },
     areaButton: {
         flex: 1,
-        height: '100%',
-        width: '100%',
-        justifyContent: 'flex-end',
-        paddingBottom: 30,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom: 230,
     },
-    button: {
-        width: '40',
-        backgroundColor: '#fff',
+    contactButton: {
+        height: '80%',
+        width: '80%',
+        backgroundColor: '#04d361',
+        marginTop: '100%',
+        borderRadius: 8,
     },
+    contactButtonText: {
+        flex: 1,
+        alignSelf: 'center',
+        paddingRight: 20,
+        color: '#FFF',
+        fontFamily: 'Archivo_700Bold',
+        fontSize: 16,
+        marginLeft: 16,
+        lineHeight: 50,
+    }
 })
 
 export default styles;
